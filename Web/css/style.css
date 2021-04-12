@@ -1,0 +1,322 @@
+#game li { 
+	display : inline;
+	padding : 0 0.8em; /* Pour espacer les boutons entre eux */
+}
+ul {
+	list-style-type : none; /* Car sinon les puces se placent n'importe où */
+}
+#index img {
+    height: 100px;
+    text-align: center;
+}
+#news img {
+    height: 200px;
+    text-align: center;
+}
+#tchat { 
+    width: 250px;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+#tchat h2 { 
+    font: Bold 140% 'Trebuchet MS', Tahoma, Sans-serif;
+    color: #88ac0b; 
+    padding: 5px 0 5px 25px;    
+    border-bottom: 1px solid #EFF0F1;
+    background: #FFF no-repeat 3px 50%; 
+    text-transform: none;
+}
+#messages {
+    height: 100px;
+    padding:2px;
+    text-align: justify;
+    overflow-y: scroll;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+}
+#content-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0; 
+    margin: 2% auto;
+}
+#wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #CCC url(../images/content.jpg) repeat-y center top;
+    margin: 0 auto;
+    height: 100%;
+}
+#main {
+    flex: 0.5;
+    padding: 0; margin: 1% 0 0 1%;
+    text-align: left;
+}
+#main h2 {
+    margin-top: 3%;
+    font: Bold 140% 'Trebuchet MS', Tahoma, Sans-serif;
+    color: #88ac0b; 
+    padding: 5px 0 5px 25px;    
+    border-bottom: 1px solid #EFF0F1;
+    background: #FFF no-repeat 3px 50%; 
+    text-transform: none;
+    text-align: center;
+}
+#main h2 a {
+    background: none;
+    color: #88ac0b;
+    text-decoration: none;
+}
+#contenu {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #CCC;
+    font: 70%/1.5em Verdana, Tahoma, arial, sans-serif;
+    color: #555; 
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header {
+    width:70%;
+    background: #CCC url(../images/header.jpg) no-repeat center top;
+    padding: 0; 
+    color: #FFF; 
+}
+header h1 a {
+    margin: 0; padding: 0;
+    font: bolder 44px 'Trebuchet MS', Arial, Sans-serif;
+    letter-spacing: -2px;
+    color: #FFF !important;
+    text-transform: none;
+    text-decoration: none;
+    background: transparent;
+}
+header h1 a:hover {
+    text-decoration:none;
+}
+#head {
+    font: normal 12px 'Trebuchet MS', Arial, Sans-serif;
+    text-transform: none;
+    color: #FFF;
+    position: relative;
+    left: 75px;
+    top: -7px;
+}
+/* header links */
+header #header-links {
+    color: #C6DDEE;
+    font-size: 10px;    
+}
+header #header-links a {    
+    color: #FFF;
+    text-decoration: none;  
+}
+header #header-links a:hover {
+    color: #D4E59F; 
+}
+/* footer */
+footer {
+    padding: 0;
+    margin-left: 15%;
+    margin-right: 15%;
+    font: bold 10px/37px Verdana, Arial, Tahoma, Sans-serif;
+    border-top: 1px solid #FFF;
+    text-align: left;
+}
+footer ul {
+    padding: 0;
+    height: 120px;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+}
+footer ul li a {
+    color: #FFF !important; 
+    text-decoration: none !important;
+}
+
+footer ul li a:hover {
+    color: #D4E59F !important;  
+}
+footer ul li#current a {   
+    color: #D4E59F !important;
+}
+/* Menu */
+nav { 
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-right: 2%;
+    font: bold 12px/37px Verdana, Arial, Tahoma, Sans-serif;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    text-align: right;
+}
+nav ul {
+    list-style: none;
+    margin:0; padding: 0;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    padding: 0 12px;
+    color: #FFF !important; 
+    text-decoration: none !important;
+}
+nav ul li.last a {
+    padding-right: 20px;    
+}
+nav ul li a:hover {
+    color: #D4E59F !important;  
+}
+nav ul li#current a {   
+    color: #D4E59F !important;
+}
+/* links */
+a, a:visited {
+    text-decoration: none;
+    color: #2180BC;
+    background: inherit;
+}
+a:hover {
+    color: #88ac0b;
+    background: inherit;
+    text-decoration: underline;
+}
+/* headers */
+h1, h2, h3 {
+    font-family: 'Trebuchet MS', Tahoma, Sans-serif;            
+}
+h1 {
+    font-size: 150%;    
+    font-weight: normal;
+    color: #006699;
+}
+h2 {
+    font-size: 140%;
+    text-transform: uppercase;
+    color: #88ac0b;
+}
+h3 {
+    font-size: 120%;
+    color: #666666; 
+}
+/* form elements */
+form {
+    margin:10px; padding: 0 5px;
+    border: 1px solid #f2f2f2; 
+    background-color: #FAFAFA;
+    text-align: center;
+}
+label {
+    display:block;
+    font-weight:bold;
+    margin:5px 0;
+}
+input:focus {
+    border: 1px solid #0B8CB8;
+    outline: 0;
+}
+input {
+    padding:2px;
+    border:1px solid #eee;
+    font: normal 1em Verdana, sans-serif;
+    color:#777;
+}
+textarea {
+    padding:2px;
+    font: normal 1em Verdana, sans-serif;
+    border:1px solid #eee;
+    height:100px;
+    color:#777;
+}
+input.button { 
+    font: bold 12px Arial, Sans-serif; 
+    height: 24px;
+    margin: 0;
+    padding: 2px 3px; 
+    color: #FFF;
+    background: #8EB50C url(../images/button-bg.jpg) repeat-x 0 0;
+    border: none;
+}
+/* start - table */
+table {
+    border-collapse: collapse;
+    margin: 10px;   
+}
+th strong {
+    color: #fff;
+}
+th {
+    background: #93BC0C;
+    height: 29px;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #FFF;
+    text-align: center;
+    border-left: 1px solid #B6D59A;
+    border-bottom: solid 2px #FFF;
+}
+form th {
+    text-align: left;
+}
+tr {
+    height: 30px;
+}
+td {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-left: 1px solid #FFF;
+    border-bottom: solid 1px #ffffff;
+    text-align: center;
+}
+form td {
+    text-align: left;
+}
+td.first,th.first {
+    border-left: 0px;
+}
+tr.row-a {
+    background: #F8F8F8;
+}
+tr.row-b {
+    background: #EFEFEF;
+}
+/* end - table */
+fieldset {
+    text-align: center;
+}
+
+/* MODAL */
+.modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.modal-wrapper {
+    background-color: #FFF;
+    width: 60%;
+    padding: 20px;
+    max-width: calc(100vh-20px);
+    max-height: calc(100vh-20px);
+    overflow-y: scroll;
+}
+
+

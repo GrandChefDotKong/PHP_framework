@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<routes>
+	<route url="/" module="News" action="index" ></route>
+	<route url="/index.html" module="News" action="index" ></route>
+	<route url="/page-([0-9]+)\.html" module="News" action="index" vars="idPage"></route>
+	<route url="/news-([0-9]+)\.html" module="News" action="show" vars="id"></route>
+	<route url="/commenter-([0-9]+)\.html" module="News" action="insertComment" vars="news" ></route>
+	<route url="/comment-update-([0-9]+)\.html" module="News" action="updateComment" vars="id" ></route>
+	<route url="/comment-delete-([0-9]+)\.html" module="News" action="deleteComment" vars="id" ></route>
+	
+	<route url="/game-list.html" module="Game" action="list"  ></route>
+	<route url="/snake-game.html" module="Game" action="snake"  ></route>
+	<route url="/jump-game.html" module="Game" action="jump"  ></route>
+	
+	<route url="/login.html" module="Connexion" action="login" ></route>
+	<route url="/register.html" module="Connexion" action="register" ></route>
+	<route url="/logout.html" module="Connexion" action="logout" ></route>
+	<route url="/verify-([\w_+*:-]+)\.html" module="Connexion" action="verify" vars="hash"></route>
+
+	<route url="/chat-get-([0-9]+)\.html" module="Chat" action="show" vars="id" ></route>
+	<route url="/chat-add.html" module="Chat" action="postMessage" ></route>
+	
+	<route url="/mapage.html" module="Profil" action="show" ></route>
+	<route url="/mapage-show.html" module="Profil" action="show" ></route>
+	<route url="/mapage-update-mail.html" module="Profil" action="updateMail" ></route>
+	<route url="/mapage-update-password.html" module="Profil" action="updatePassword" ></route>
+</routes>
